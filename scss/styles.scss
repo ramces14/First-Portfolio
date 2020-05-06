@@ -1,0 +1,35 @@
+// Partial imports
+
+@import 'partials/_mediaQueries',
+        'partials/sticky';
+        
+/* ----------------------
+------ Base Styles -------
+------------------------*/
+body{
+    background: url(../starBG.png) repeat center; 
+}
+
+.img-div{
+    margin-top: -10rem;
+}
+
+.bg-color{
+    background-color: rgb(44, 42, 42);
+}
+
+.jumbotron{
+    background: linear-gradient(#2c2a2a, transparent 70%),
+                linear-gradient(0deg, #2c2a2a, transparent),     
+            #2c2a2a url(../galaxy.jpg) no-repeat center;   
+    background-size: cover;
+}
+
+.rocket{
+    margin-top: auto;
+}
+
+.card-div{
+    width: 95%;
+    max-width: 1440px;
+}
