@@ -10,20 +10,19 @@ body{
     background: url(../starBG.png) repeat center; 
 }
 
-.img-div{
-    margin-top: -10rem;
-}
-
 .bg-color{
     background-color: rgb(44, 42, 42);
 }
 
 .jumbotron{
-    background: linear-gradient(#2c2a2a, transparent 70%),
-                linear-gradient(0deg, #2c2a2a, transparent),     
-            #2c2a2a url(../galaxy.jpg) no-repeat center;   
-    background-size: cover;
+    background-color: rgba(150, 135, 235, 0.575);
 }
+// .jumbotron{
+//     background: linear-gradient(#2c2a2a, transparent 70%),
+//                 linear-gradient(0deg, #2c2a2a, transparent),     
+//             #2c2a2a url(../galaxy.jpg) no-repeat center;   
+//     background-size: cover;
+// }
 
 .rocket{
     margin-top: auto;
