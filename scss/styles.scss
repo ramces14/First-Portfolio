@@ -1,35 +1,109 @@
 // Partial imports
 
-@import 'partials/_mediaQueries',
+@import 'partials/mediaQueries',
+        'partials/navbar',
         'partials/sticky';
         
 /* ----------------------
 ------ Base Styles -------
 ------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background: url(../starBG.png) repeat center; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .bg-color{
     background-color: rgb(44, 42, 42);
 }
 
-.jumbotron{
-    background-color: rgba(150, 135, 235, 0.575);
-    border: solid whitesmoke 1px;
+p{
+    font-size: 18px;
 }
-// .jumbotron{
-//     background: linear-gradient(#2c2a2a, transparent 70%),
-//                 linear-gradient(0deg, #2c2a2a, transparent),     
-//             #2c2a2a url(../galaxy.jpg) no-repeat center;   
-//     background-size: cover;
-// }
 
-.rocket{
-    margin-top: auto;
+// Home //
+
+.jumbotron{
+    background-color: rgba(126, 113, 199, 0.575);
+    border-top: solid whitesmoke 2px;
+    border-bottom: solid rgb(110, 108, 108) 2px;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+h1, h2, h4{
+    font-family:'Oswald', sans-serif;
+}
+
+// Projects //
+
+.project-bg-color{
+    background-color: whitesmoke;
 }
 
 .card-div{
     width: 95%;
     max-width: 1440px;
+}
+
+.card-img-top{
+    border: solid rgb(110, 108, 108) 2px;
+    border-bottom: 0px;
+}
+
+.card-body{
+    background-color: rgb(177, 176, 176);
+    border: solid rgb(110, 108, 108) 2px;
+    border-top: 0px;  
+}
+
+.primary-col{
+    background-color: rgb(126, 113, 199);
+    color: whitesmoke;
+}
+
+.primary-col:hover{
+    background-color: rgba(126, 113, 199, 0.616);
+}
+
+.position{
+    position: absolute;
+    bottom: 20px;
+}
+
+// Contact //
+
+footer{
+    background-color: rgba(126, 113, 199, 0.575);
+    border-bottom: solid whitesmoke 2px;;
+    color: whitesmoke;
+    padding: 120px 10px 40px 10px;
+}
+
+.img-linkedin{
+    width: 10%;
+    max-width: 40px;
+    display: block;
+}
+
+.cus-svg{
+    display: block;
+    margin-right: 30px;
+}
+
+.cus-svg:hover{
+    fill: rgba(245, 245, 245, 0.671);
+}
+
+.website-border{
+    border: solid rgba(88, 87, 87, 0.836) 2px;
+    border-radius: 2px;
 }

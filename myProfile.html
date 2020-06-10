@@ -8,133 +8,279 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
   </head>
-  <body class="bg-color">
+  <body class="bg-color" id="home">
 
+
+    <!-- Nav -->
+    <div class="nav-container sticky-top">
+      <div id="navbar" class="navbar-div">
+        <a href="#home">Home</a> 
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Nav End -->
+
+
+    <!-- Main Content -->
     <div class="container-fluid p-0">  
 
-      <!--Nav-->
-      <ul id="navbar" class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active text-light" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
-          </li>
-      </ul>
-      <!--/Nav-->
-
-      <!--jumbotron-->
-      <div class="jumbotron jumbotron-fluid jumbotron-height text-center mt-5">
-          <div class="container">
-            <h1 class="display-4 text-light mt-5">Front-end Developer</h1>
-            <p class="lead text-light"> Welcome to my first website! Hope you enjoy it :)</p>
-          </div>
-        </div>
-      <!--/jumbotron-->
-
-      <!--Avatar-->
-      
-      <!-- <div class="container-fluid center avatar-height"> -->
-      <div class="d-flex flex-column img-div">
-          <img src="animations/avatar.webp" class="avatar mb-5 mx-auto" alt="...">
-          <img src="img/RocketOutline.png" class="rocket mx-auto" alt="...">
-      </div>
-
-      <!--/Avatar-->
-
-      <!--Card-Group-->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mx-auto mt-5 pt-5 flush card-div">
-
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="animations/planets.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Responsive website</h5>
-              <p class="card-text">
-                This project was my first attempt on creating a responsice webpage using CSS.
-                It was very difficult completing this project with the limited knowledge I knew at this time, but I was happy with the final result that I came up with. 
-                Base on the template that was provide by Team Treehouse.
-              </p>
+        <!--jumbotron-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="main-h1">Hi, I'm Ramces. This is my first attempt at building a website from scratch using all the skills that I learned from treehouse.</h1>
+              <p class="main-p">This is the beginning of my new journey. Where I make a path for myself to becoming a Front-End Developer. I am grateful for all of the new skills that I have gained from treehouse and I promise that the learning doesn’t stop here. I’m going to continue to challenge myself everyday not only to become the best software developer, but the best overall person that I can be. The excitement of new challenges lie ahead and I’m ready to challenge them head on.</p>
             </div>
           </div>
-        </div>
+        <!--/jumbotron-->
 
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="animations/solarSystem.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CSS Form</h5>
-              <p class="card-text">
-                The goal of this project was to create a reposive form page with a provided template to help you replicate the look of what the form should look like.
-                I feel that this project have a good visual to what I would be working on when working for companies that what users input and information. 
-              </p>
+      <!-- Projects -->
+      <section id="projects" class="project-bg-color">
+
+        <!--Card-Group-->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mx-auto flush card-div py-5">
+
+          <!--First Card-->
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="animations/planets.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Responsive Website</h4>
+                <p class="card-text pb-5">This project was my first attempt at using CSS to create a responsive webpage. The only skills required to do this project was HTML and CSS. With the use of media queries I was able to successfully build a responsive website that looked similar to the template that was provided for this project. </p>
+                <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#responsiveWebsite">
+                  Preview
+                </button>
+
+                <div class="modal fade" id="responsiveWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Responsive Website</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/responsiveWebsite.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="animations/Rocket.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Photo Gallery</h5>
-              <p class="card-text">
-                This project was my first look into basic javascript concepts and jQuery. 
-                The webpage was created with the help of jQuery plugins, and it gave me a insight to how some of the best websites were created. 
-                With the help of open source code people can come together to create amazing things.
-              </p>
+          <!--Second Card-->
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="animations/solarSystem.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">CSS Form</h4>
+                <p class="card-text pb-5">The goal of this project was to create a responsive webpage with the main focus on forms. Knowing how to create forms is an important part of web development and it allows people to provide feedback or interaction with one another. Here once again used CSS and HTML to create this responsive form using the template provided as a guide. </p>
+                <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#cssForm">
+                  Preview
+                </button>
+
+                <div class="modal fade" id="cssForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">CSS Form</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/cssForm.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="animations/spaceMan.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Wheel of Success</h5>
-              <p class="card-text">
-                This project was my first attempt at manipulating the DOM. In this project I created a miniture version of the game show wheel of fortune. 
-                I really enjoyed this project cause it was the first time I experince the power of javascript and what you can do with it.
-              </p>
+          <!--Third Card-->
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="animations/Rocket.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Photo Gallery</h4>
+                <p class="card-text pb-5">For this project the goal was to create an interactive photo gallery using some javascript and jQuery. By this point I have already learned some basic javascript and jQuery concepts and with the use of that I was able to successfully use some jQuery plugins to help me build the photo gallery section of the page. This also gave me a taste of open source code and how people share it with one another and implement them on their own websites.</p>
+                <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#photoGallery">
+                  Preview
+                </button>
+
+                <div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Photo Gallery</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/photoGallery.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col mb-4"> 
-          <div class="card h-100">
-            <img src="animations/launchingRocket.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Responsive Dashboard</h5>
-              <p class="card-text">
-                This is the first project where I had to put all my skills together to create a website that was not only aesthetically pleasing, but also interactive. 
-                For this project I was given a template, but everything from the html to the javascript was created by me except the charts of course. 
-                This was a really fun project to work on cause I was able to put everything together to show how far of gone since the beginning of my journey.
-              </p>
+          <!--Fourth Card-->
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="animations/spaceMan.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Wheel of Success</h4>
+                <p class="card-text pb-5">This project was my first attempt at manipulating the DOM. In this project I created a miniture version of the game show "wheel of fortune". I really enjoyed this project cause it was the first time I experince the power of javascript and the amount of interactivity that you add to a webpage to add to the user's experience.</p>
+                <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#wheelOfSuccess">
+                  Preview
+                </button>
+
+                <div class="modal fade" id="wheelOfSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Wheel of Success</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/wheelOfSuccess.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col mb-4">
-          <div class="card h-100">
-            <img src="animations/spaceShip.gif" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Employee Directory</h5>
-              <p class="card-text">
-                The goal of this project was to create Employee directory using an api that generated random users that has its own information like birthday, street address, and etc. 
-                I also added some of my own javascript to make the website interactive as well.
-              </p>
+          <!--Fifth Card-->
+          <div class="col mb-4"> 
+            <div class="card h-100">
+              <img src="animations/launchingRocket.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Responsive Dashboard</h4>
+                <p class="card-text pb-5">This is the first project where I had to put all my skills together to create a website that was not only aesthetically pleasing, but also interactive. For this project I was given a template to guide me through the design of the website.Everything from the HTML, CSS, and javascript was created by me except the charts. The charts were created with the help of Chart.js. This was a really fun project to work on because I was able to put everything together to show how far I’ve gone since the beginning of my journey.</p>
+
+                <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#responsiveDashboard">
+                  Preview
+                </button>
+
+                <div class="modal fade" id="responsiveDashboard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Responsive Dashboard</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/responsiveDashboard.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
+
+          <!--Sixth Card-->
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="animations/spaceShip.gif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Employee Directory</h4>
+                <p class="card-text pb-5">The goal of this project was to create an Employee directory using an API that generated random users that have their own information like birthday, street address, and etc. This website was created with HTML, CSS and javascript, but most of the information was created using javascript to fetch most of the information using API’s. Like always this website is also responsive and has some interactivity as well. </p>
+
+                  <button type="button" class="btn primary-col position" data-toggle="modal" data-target="#employeeDirectory">
+                    Preview
+                  </button>
+
+                <div class="modal fade" id="employeeDirectory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Employee Directory</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/employeeDirectory.png" class="img-fluid website-border"> 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn primary-col mx-auto" data-dismiss="modal">Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
+        <!--/Card-Group-->
 
-      </div>
-      <!--/Card-Group-->
+      </section> 
+      <!-- End of Projects  -->
 
-    </div>      
+    </div>   
+    <!-- End of Main Content  -->
+    
+    <section id="contact">
+      <footer class="text-center">
+          <h2>Contact</h2>
+          <p>If your interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+          <p>Phone: (518) 888 - 1501</p>
+          <p>Email: ramces.business@gmail.com</p>
+
+          <a href="https://www.linkedin.com/in/ramces-gil/" target="_blank">
+            <img src="img/LI-In-Bug.png" alt="" class="img-linkedin mx-auto">
+          </a>
+          
+          <a href="#home">
+            <svg class="bi bi-arrow-up-circle-fill cus-svg ml-auto" width="4em" height="4em" viewBox="0 0 16 16" fill="whitesmoke" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+            </svg>
+          </a>
+      </footer>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
